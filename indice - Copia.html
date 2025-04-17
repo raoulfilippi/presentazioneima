@@ -45,6 +45,7 @@
       cursor: pointer;
       border: 2px solid white;
       transform: translate(-50%, -50%);
+      z-index: 2;
     }
 
     .popup {
@@ -57,7 +58,7 @@
       display: none;
       text-align: left;
       font-size: 1rem;
-      z-index: 10;
+      z-index: 3;
     }
 
     .popup h4 {
@@ -104,11 +105,12 @@
       font-size: 0.9em;
       color: black;
       font-weight: bold;
-      background: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.85);
       padding: 4px 6px;
       border-radius: 4px;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -120%);
       white-space: nowrap;
+      z-index: 1;
     }
 
     .home-button {
@@ -174,7 +176,7 @@
     <div class="pin" style="top: 67%; left: 82%;" onclick="showPopup('singapore')"></div>
     <div class="pin-label" style="top: 67%; left: 82%;">Singapore</div>
 
-    <!-- POPUP COMPLETI -->
+    <!-- POPUP -->
     <div class="popup" id="popup-greenville" style="top: 45%; left: 27%;">
       <h4>Greenville</h4>
       <div class="box">Machine Training</div>
@@ -210,3 +212,4 @@
 
 </body>
 </html>
+
