@@ -17,9 +17,9 @@
     }
 
     header h1 {
-      font-size: 22px;
+      font-size: 18px;
       color: #333;
-font-weight: normal;
+	font-weight: normal;
     }
 
     .main-container {
@@ -142,7 +142,7 @@ font-weight: normal;
 
     .main-logo {
       display: block;
-      margin: 0px auto;
+      margin: 20px auto;
       max-width: 200px;
     }
 
@@ -174,19 +174,41 @@ font-weight: normal;
       visibility: visible;
       opacity: 1;
     }
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  text-align: center;
+  padding: 20 px 0 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.home-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+body {
+  padding-top: 150px; /* spazio per evitare che la barra fissa copra il contenuto */
+}
+
   </style>
 </head>
 <body>
 
-  <!-- Bottone Home -->
+<div class="sticky-header">
   <div class="home-button">
     <a href="index.html">Portfolio</a>
   </div>
+  <img src="IMALIFE.png" alt="Logo IMA Life" class="main-logo">
+  <h1>All content is delivered within the dedicated E-Learning platform: IMA Skillgate</h1>
+</div>
 
-  <header>
-    <img src="IMALIFE.png" alt="Logo IMA Life" class="main-logo">
-    <h1>All content is delivered within the dedicated <br> E-Learning platform: IMA Skillgate</h1>
-  </header>
 
   <div class="main-container">
 
